@@ -599,8 +599,11 @@ nav ul, nav ol { margin: 0; }
   .article-list { width: auto; margin-left: auto; margin-right: auto; }
 
   article {
-
-    header { margin: 0em auto (@v-padding * 3); }
+    //there is a lot of space between the article title or header and the start of the article
+    //original code below
+    //header { margin: 0em auto (@v-padding * 3); }
+    //replacement code below
+    header { margin: 0em auto @v-padding; }
 
     .entry-title { margin-top: 0; }
     .date, .author, .entry-source { font-size: 0.85em; letter-spacing: 2px; font-style: italic; }
