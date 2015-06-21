@@ -95,9 +95,12 @@
   .canvas-style-masthead-logo-left,
   .canvas-style-masthead-logo-right {
     &.header-subtitle-none {
-      #header { padding-top: (@v-padding * 2); }
+      //padding-top below was previously equal to (@v-padding * 2);
+      #header { padding-top: @v-padding; }
     }
     #lower-logo {
+      //padding-top was previously equal to (@v-padding * 2);
+      //padding-bottom is a new addition by gnaifeh
       padding-top: @v-padding;
       padding-bottom: @v-padding;
       clear: both;
